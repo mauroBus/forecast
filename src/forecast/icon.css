@@ -1,0 +1,132 @@
+.icon,
+.cloudGroup,
+.sun-group,
+.rain-group {
+  position: relative;
+}
+
+.icon {
+  align-items: flex-end;
+  background: #000000;
+  border-radius: 50%;
+  border: 0.2rem solid #bfbfbf;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 2rem;
+}
+
+.cloudGroup {
+  width: 120px;
+  height: 106px;
+}
+
+.iconCloud {
+  position: absolute;
+  background-color: white;
+  display: block;
+}
+
+.shadowCloudClip {
+  box-shadow: 2px -6px 0 rgb(25,35,45);
+}
+
+.cloudBase {
+  top: 27px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  border-radius: 2.5rem;
+  z-index: 1;
+}
+
+.cloudCircle {
+  top: 0;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  z-index: 2;
+}
+
+.cloudCircle::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 46px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+  background-color: inherit;
+  box-shadow: 1px -6px 0 rgb(25,35,45);
+
+}
+
+.sun {
+  top: -12px;
+  left: 53px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.sunshine,
+.sunshine::before,
+.sunshine::after {
+  position: absolute;
+  width: 18px;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.sunshine {
+  top: 17px;
+  right: -17px;
+}
+
+.sunshine::before,
+.sunshine::after,
+.rain::before,
+.rain::after {
+  content: "";
+  background-color: inherit;
+}
+
+.sunshine::before {
+  top: -48px;
+  right: 45px;
+  transform: rotate(-90deg);
+}
+
+.sunshine::after {
+  top: -33px;
+  right: 11px;
+  transform: rotate(-45deg);
+}
+
+.rain {
+  left: 0;
+  bottom: -86px;
+  transform: rotate(-75deg);
+}
+
+.rain,
+.rain::before,
+.rain::after {
+  position: absolute;
+  width: 2.5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 0 0 4px rgb(25,35,45);
+  z-index: 2;
+}
+
+.rain::before {
+  left: 9px;
+  bottom: -35px
+}
+
+.rain::after {
+  right: -18px;
+  bottom: -69px
+}

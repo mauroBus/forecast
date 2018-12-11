@@ -1,0 +1,50 @@
+
+.searchBar {
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 790px;
+  width: 100%;
+}
+
+.searchBarBox {
+  height: 68px;
+}
+
+.searchBarInputWrapper {
+  flex-grow: 1;
+}
+
+.searchBarBox input {
+  background: transparent;
+  border: 0;
+  color: #555555;
+  display: block;
+  font-size: 16px;
+  height: 100%;
+  padding: 10px 32px;
+  width: 100%;
+}
+
+.searchBarBtnWrapper {
+  width: 74px;
+}
+
+.searchBarBtn {
+  background: #d26c22;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  transition: all .2s ease-out, color .2s ease-out;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.searchBarBtn svg {
+  width: 16px;
+}

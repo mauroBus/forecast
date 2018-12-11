@@ -1,0 +1,23 @@
+
+.title  {
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.weather h2 {
+  color: #d26c22;
+  margin: 4rem 0 2rem;
+  text-align: center;
+}
+
+.cell {
+  background-color: #797979;
+  color: #FFFFFF;
+  font-size: 4rem;
+  margin: 5px 0 10px 0;
+}
+
+.heading {
+  padding-bottom: 8px;
+}
