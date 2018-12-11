@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
-import { fetchMap } from '../../redux/map/actions'
 import './index.css'
 
-class CityMap extends PureComponent {
+export default class CityMap extends PureComponent {
   map = null
 
   mapRef = null
@@ -61,5 +60,3 @@ class CityMap extends PureComponent {
     return <div className="map" ref={this.setMapRef} />
   }
 }
-
-export default connect(null, { fetchMap })(CityMap)
